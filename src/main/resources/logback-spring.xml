@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!--    配置文件-->
+    <property name="APP_NAME" value="ELKDEMO"/>
+    <property name="LOG_HOME" value="logs/"/>
+    <property name="FILE_NAME" value="mp-server"/>
+    <property name="patternLayout" value="[%d{yyyy-MM-dd'T'HH:mm:ss.SSSZZ}] [%level{length=5}] [%thread] [%logger]
+        [%X{hostName}] [%X{ip}] [%X{applicationName}] [%F,%L,%C,%M] [%m] ## '%ex{short}'%n"/>
+
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                ${APP_NAME} [%d{HH:mm:ss.SSS}] %-5level %F %L %C %logger{15} - %msg%n
+
+            </pattern>
+        </layout>
+    </appender>
+    <!--    <appender name="customLayout" class="ch.qos.logback.core.ConsoleAppender">-->
+    <!--        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">-->
+    <!--            <layout class="io.baizi.demo.elkdemo.layout.LogLayout" />-->
+    <!--        </encoder>-->
+    <!--    </appender>-->
+
+    <appender name="fileLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <encoder>
+            <pattern>
+                <!--                [%d{HH:mm:ss.SSS}] %-5level [%thread]%logger{15} - %msg%n-->
+                ${patternLayout}
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/%d.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- Logstash -->
+    <!-- 为logstash输出的JSON格式的Appender -->
+    <appender name="logstash"
+              class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <destination>127.0.0.1:5044</destination>
+        <!-- 日志输出编码 -->
+        <encoder
+                class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <!--                <mdc/>-->
+                <!--                <context/>-->
+                <!--                <version/>-->
+                <!--                <timestamp>-->
+                <!--                    <timeZone>UTC+8</timeZone>-->
+                <!--                </timestamp>-->
+                <pattern>
+                    <pattern>
+                        {
+                        "severity": "%level",
+                        "class": "%C:%L",
+                        "method": "%M",
+                        "message": "%m",
+                        "appName": "${APP_NAME}",
+                        "thread": "%thread",
+                        "happenTime": "%d{yyyy-MM-dd'T'HH:mm:ss.SSSZZ}",
+                        "ex": "%ex{5}"
+                        }
+                    </pattern>
+                </pattern>
+            </providers>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="consoleLog"/>
+        <!--        <appender-ref ref = "fileLog"/>-->
+        <!--        <appender-ref ref = "customLayout"/>-->
+
+        <appender-ref ref="logstash"/>
+    </root>
+</configuration>

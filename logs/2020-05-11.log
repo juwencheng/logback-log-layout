@@ -1,0 +1,83 @@
+[2020-05-11T22:50:21.266+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T22:50:21.268+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T22:50:23.349+0800] [ERROR] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]]         [] [] [] [DirectJDKLog.java,175,org.apache.juli.logging.DirectJDKLog,log] [Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause] ## 'java.lang.ArithmeticException: / by zero
+	at io.baizi.demo.elkdemo.Controller.getError(Controller.java:17)
+'
+[2020-05-11T22:50:23.353+0800] [ERROR] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]]         [] [] [] [DirectJDKLog.java,175,org.apache.juli.logging.DirectJDKLog,log] [Servlet.service() for servlet [dispatcherServlet] threw exception] ## 'java.lang.ArithmeticException: / by zero
+	at io.baizi.demo.elkdemo.Controller.getError(Controller.java:17)
+'
+[2020-05-11T22:50:23.354+0800] [ERROR] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]]         [] [] [] [DirectJDKLog.java,175,org.apache.juli.logging.DirectJDKLog,log] [Exception Processing ErrorPage[errorCode=0, location=/error]] ## 'org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.ArithmeticException: / by zero
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+Caused by: java.lang.ArithmeticException: / by zero
+	at io.baizi.demo.elkdemo.Controller.getError(Controller.java:17)
+'
+[2020-05-11T23:03:14.577+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T23:03:14.578+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T23:03:36.171+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T23:03:36.171+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T23:03:52.504+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T23:03:52.505+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T23:05:02.332+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T23:05:02.333+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T23:06:12.626+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T23:06:12.626+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T23:06:36.583+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T23:06:36.583+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T23:06:45.318+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T23:06:45.318+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T23:09:41.051+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T23:09:41.051+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T23:10:22.486+0800] [WARN] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,24,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [warn-启动完成] ## ''
+[2020-05-11T23:10:22.486+0800] [ERROR] [main] [io.baizi.demo.elkdemo.ElkDemoApplication]         [] [] [] [ElkDemoApplication.java,25,io.baizi.demo.elkdemo.ElkDemoApplication$1,run] [error-启动完成] ## ''
+[2020-05-11T23:23:29.429+0800] [ERROR] [main] [org.springframework.boot.SpringApplication]         [] [] [] [SpringApplication.java,826,org.springframework.boot.SpringApplication,reportFailure] [Application run failed] ## 'java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:79 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash-json]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:324)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:79 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash-json]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+'
+[2020-05-11T23:29:09.350+0800] [ERROR] [main] [org.springframework.boot.SpringApplication]         [] [] [] [SpringApplication.java,826,org.springframework.boot.SpringApplication,reportFailure] [Application run failed] ## 'java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:79 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash-json]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:324)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:79 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash-json]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+'
+[2020-05-11T23:29:46.053+0800] [ERROR] [main] [org.springframework.boot.SpringApplication]         [] [] [] [SpringApplication.java,826,org.springframework.boot.SpringApplication,reportFailure] [Application run failed] ## 'java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:79 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstashJson]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:324)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:79 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstashJson]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+'
+[2020-05-11T23:30:51.834+0800] [ERROR] [main] [org.springframework.boot.SpringApplication]         [] [] [] [SpringApplication.java,826,org.springframework.boot.SpringApplication,reportFailure] [Application run failed] ## 'java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:79 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:324)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:79 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+'
